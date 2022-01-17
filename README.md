@@ -40,3 +40,20 @@ Given the population mean of 1500, the null hypothesis which states the two mean
 - When looking at all manufacturing lots together there is not sufficient evidence to reject the null hypothesis. This is due to a p-value of .06.
 - When looking at manufacturing  lots 1 and 2  there is not sufficient evidence to reject the null hypothesis. This is due to a p-value of 1 for lot 1 and .6 for lot 2.
 - When looking at manufacturing lot 3 the null hypothesis can be rejected as the p-value is .04. This tells us that lot 3 is statisically different from the population mean of 1500. Given this information the team should inspect lot 3 to look into the reason for these variances.
+
+## Study Design: MechaCar vs Competition
+### Metrics
+To test the mecha car against the competition I would use 4 metrics for comparison:
+- Cost
+- Fuel Effiency(City)
+- Fuel Efficiency(Hwy)
+- safety Rating    
+
+### Hypothesis
+The null hypothesis for each of these metrics would be that they are not statistically different from the competition while the alternative hypothesis would be that the items are statistically different.    
+
+### Tests
+I would take samples of the competitions vehicles and our own vehicles and compare the information using Two-Sampe t-tests to see where the alternative hypothesis can be accepted. Using Two sample t-tests would allow me to see where there differences in the metrics when the p-value is less than .05(a rejected null hypothesis). This would point me in the best direction to compare the vehicles. i.e We may not be able to reject he null hypothesis for cost(similiar costs), but we can reject on the saftey rating which could allow us to show more value.
+
+### Data
+To run the statistical test a sufficiently large test sample data for the four metrics(Cost,Fuel Effiency(City), Fuel Efficiency(Hwy), and safety Rating) would be needed for the competitors and our own vehicles to make the necessary comparisons. This data would be used to get the means of each of the metrics to make our comparisons.
