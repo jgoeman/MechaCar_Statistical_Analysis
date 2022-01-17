@@ -5,10 +5,13 @@
 ![image](https://user-images.githubusercontent.com/36859475/149678047-28a7da21-0685-4d07-9a2c-0a726ffbc2ec.png)
     
 Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?    
+- vehicle length, ground clearance and intercept are statistically unlikely to providerandom amounts of variance to the model.    
 
 Is the slope of the linear model considered to be zero? Why or why not?    
+- The slope of the linear model is not considered zero. The reason for this is the p-value is 5.35x10^-11. The significance level is considered to .05%. Therefore, we can state that there is sufficient evidence to reject the null hypothesis that the slope of the linear model is zero.    
 
 Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?    
+- I would say yes this model does predict the mpg of the MechaCar effectively. The reason for this comes from looking at the R-squared value of 0.7149. This gives a high probability of the the model performing well in real world scenarios.
 
 ## Summary Statistics on Suspension Coils
 
