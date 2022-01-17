@@ -23,7 +23,20 @@ The design specifications for the MechaCar suspension coils dictate that the var
 
 
 ## T-Tests on Suspension Coils
+- All Manufacturing Lots    
+
 ![image](https://user-images.githubusercontent.com/36859475/149687565-278ece74-ff97-4f21-998d-dfd38daba4db.png)
+- Lot 1   
+
 ![image](https://user-images.githubusercontent.com/36859475/149687608-827d150a-8ff4-4b38-b6f1-28939838c454.png)
+- Lot 2    
+
 ![image](https://user-images.githubusercontent.com/36859475/149687657-22e3df03-d42b-4432-a48a-77012fd3ed67.png)
-![image](https://user-images.githubusercontent.com/36859475/149687688-2d1e07ee-2ef9-4964-8d10-26637e797748.png)
+- Lot 3    
+
+![image](https://user-images.githubusercontent.com/36859475/149687688-2d1e07ee-2ef9-4964-8d10-26637e797748.png)    
+    
+Given the population mean of 1500, the null hypothesis which states the two means(population and Sample) are not statistically different, and using the common 0.05 percent significance level. The following information can be derived:    
+- When looking at all manufacturing lots together there is not sufficient evidence to reject the null hypothesis. This is due to a p-value of .06.
+- When looking at manufacturing  lots 1 and 2  there is not sufficient evidence to reject the null hypothesis. This is due to a p-value of 1 for lot 1 and .6 for lot 2.
+- When looking at manufacturing lot 3 the null hypothesis can be rejected as the p-value is .04. This tells us that lot 3 is statisically different from the population mean of 1500. Given this information the team should inspect lot 3 to look into the reason for these variances.
