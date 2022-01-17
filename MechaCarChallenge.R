@@ -1,5 +1,4 @@
 library(dplyr)
-library(jsonlite)
 
 #Deliverable 1
 MechaCarMpg_table <- read.csv('MechaCar_mpg.csv',check.names = F,stringsAsFactors = F) # Read and crete table using MechaCar_mpg
@@ -18,8 +17,8 @@ lot_summary <- suspension_coil_table %>%
   summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI), .groups = 'keep') #create summary table by LOt number
 
 # Deliverable 3
-t.test(suspension_coil_table$PSI,mu=mean(1500))
+t.test(suspension_coil_table$PSI,mu=mean(1500)) # PSI across all manufacturing lots
 
-t.test(subset(suspension_coil_table,Manufacturing_Lot=="Lot1")$PSI, mu=mean(1500))
-t.test(subset(suspension_coil_table,Manufacturing_Lot=="Lot2")$PSI, mu=mean(1500))
-t.test(subset(suspension_coil_table,Manufacturing_Lot=="Lot3")$PSI, mu=mean(1500))
+t.test(subset(suspension_coil_table,Manufacturing_Lot=="Lot1")$PSI, mu=mean(1500)) # PSI across lot 1
+t.test(subset(suspension_coil_table,Manufacturing_Lot=="Lot2")$PSI, mu=mean(1500)) # PSI across lot 2
+t.test(subset(suspension_coil_table,Manufacturing_Lot=="Lot3")$PSI, mu=mean(1500)) # PSI across lot 3
